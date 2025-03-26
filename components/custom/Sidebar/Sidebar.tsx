@@ -1,6 +1,6 @@
-/* eslint-disable no-unused-vars */
+ 
 /* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable import/prefer-default-export */
+ 
 
 'use client';
 

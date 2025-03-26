@@ -1,13 +1,12 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { ColumnDef } from '@tanstack/react-table';
 import moment from 'moment';
-import { AppointmentDiagnosisInterface, AppointmentInterface } from 'motherangela';
+import { AppointmentInterface } from 'motherangela';
 import { MoveRight } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import Avatar from '@/components/custom/Avatar';
-import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { formatCurrency } from '@/utils/number';
+import Avatar from '@/components/custom/Avatar';
 
 export const columns: ColumnDef<AppointmentInterface>[] = [
   // {
@@ -68,15 +67,6 @@ export const columns: ColumnDef<AppointmentInterface>[] = [
       <div className="text-[12px] text-slate-500">
         <p>{moment(row.original?.appointment_date).format('ll')}</p>
         {/* <p>{row.original.appointment_time}</p> */}
-      </div>
-    ),
-  },
-  {
-    accessorKey: 'charges',
-    header: 'Charges',
-    cell: ({ row }) => (
-      <div className="text-[12px] text-slate-500 ">
-        {formatCurrency(row.original?.charges) ?? 0}
       </div>
     ),
   },

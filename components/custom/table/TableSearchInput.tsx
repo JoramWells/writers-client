@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/no-unused-prop-types */
+ 
+ 
 import React, {
   type ReactNode,
   type Dispatch,
@@ -9,7 +9,7 @@ import React, {
 } from 'react';
 // import { CSVLink } from "react-csv";
 
-import { DropdownMenuTrigger } from '@radix-ui/react-dropdown-menu';
+// import { DropdownMenuTrigger } from '@radix-ui/react-dropdown-menu';
 // import { ChevronDownIcon } from "@radix-ui/react-icons";
 import {
   ChevronDownIcon, FileDown, Search, X,
@@ -20,6 +20,7 @@ import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
+  DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu';
 
 interface TableSearchInputProps<TData, TValue> {
